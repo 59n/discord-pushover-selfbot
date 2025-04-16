@@ -1,16 +1,33 @@
-# Pushover Bot
+# Discord Pushover Selfbot
 
-A Discord bot that forwards messages from specific Discord channels to various notification services including Pushover, Discord webhooks, and ntfy.
+## 📱 Discord to Mobile Notifications Bridge
 
-## Features
+A powerful Discord selfbot that forwards messages from specific Discord channels directly to your mobile device through Pushover, Discord webhooks, or ntfy notifications. Never miss important messages again!
 
-- Monitor specific Discord channels for new messages
-- Forward messages to Pushover notifications
-- Forward messages to Discord webhooks
-- Forward messages to ntfy notifications
-- Configurable notification settings
+## 🚀 Key Features
 
-## Prerequisites
+- **Multi-Channel Monitoring**: Track messages from specific Discord channels
+- **Real-Time Notifications**: Get instant mobile alerts via Pushover
+- **Flexible Configuration**: Choose between Pushover, Discord webhooks, or ntfy
+- **Customizable Settings**: Control which notifications you receive
+- **Easy Setup**: Simple environment variable configuration
+
+## 💡 Perfect For
+
+- Community moderators who need to stay informed
+- Team members who can't miss critical discussions
+- Anyone who wants important Discord messages delivered directly to their phone
+- Users who need to monitor channels without staying active on Discord
+
+## 🔧 Highly Configurable
+
+Easily customize which channels to monitor, where to send notifications, and what information to include in alerts. The bot is designed to be flexible and adapt to your specific notification needs.
+
+## 📊 Lightweight & Efficient
+
+Built with performance in mind, this bot uses minimal resources while providing reliable notification delivery. It's designed to run continuously with low overhead.
+
+## 📋 Prerequisites
 
 - Node.js (v14 or higher recommended)
 - npm or yarn
@@ -18,12 +35,12 @@ A Discord bot that forwards messages from specific Discord channels to various n
 - Pushover account (optional)
 - ntfy server (optional)
 
-## Installation
+## 🔧 Installation
 
 1. Clone this repository:
    ```
-   git clone https://github.com/59n/pushover-bot.git
-   cd pushover-bot
+   git clone https://github.com/59n/discord-pushover-selfbot.git
+   cd discord-pushover-selfbot
    ```
 
 2. Install dependencies:
@@ -38,7 +55,7 @@ A Discord bot that forwards messages from specific Discord channels to various n
    node client.js
    ```
 
-## Environment Variables
+## ⚙️ Environment Variables
 
 Create a `.env` file in the root directory with the following variables:
 
@@ -73,7 +90,7 @@ PUSHOVER_USER=your_pushover_user_key
 NTFY_URL=your_ntfy_url
 ```
 
-## Usage
+## 🚀 Usage
 
 The bot will automatically start monitoring the specified Discord channels once it's running. It will forward messages according to your configuration in the `.env` file.
 
@@ -83,14 +100,14 @@ You can enable or disable different notification methods by changing the corresp
 - `ENABLE_DISCORD_NOTIF`: Set to `true` to enable Discord webhook notifications
 - `ENABLE_NTFY`: Set to `true` to enable ntfy notifications
 
-## License
+## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-This bot uses discord.js-selfbot-v13 which is not officially supported by Discord. Use at your own risk as it may violate Discord's Terms of Service.
+**Important**: This bot uses discord.js-selfbot-v13 which interacts with user accounts. Please be aware of Discord's Terms of Service when using selfbots.
