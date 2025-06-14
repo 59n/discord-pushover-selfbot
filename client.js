@@ -71,11 +71,11 @@ client.on('messageCreate', async (message) => {
         forwardChannelId = process.env.FORWARD_CHANNEL_ID;
 
         // Determine which webhook URL to use based on the source channel
-        if (message.channel.id === process.env.GENERAL_CHANNEL_ID) { // general
+        if (message.channel.id === process.env.CHANNEL_ID_ONE) { // FWRD CHANNEL 1
             webhookurl = process.env.GENERAL_WEBHOOK_URL;
-        } else if (message.channel.id === process.env.BEGINNERS_CHANNEL_ID) { // beginners
+        } else if (message.channel.id === process.env.CHANNEL_ID_TWO) { // FWRD CHANNEL 2
             webhookurl = process.env.BEGINNERS_WEBHOOK_URL;
-        } else if (message.channel.id === process.env.ACTIVE_CHANNEL_ID) { // active
+        } else if (message.channel.id === process.env.CHANNEL_ID_THREE) { // FWRD CHANNEL 3
             webhookurl = process.env.ACTIVE_WEBHOOK_URL;
         } else {
             return;
