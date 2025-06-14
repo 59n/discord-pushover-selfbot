@@ -72,11 +72,11 @@ client.on('messageCreate', async (message) => {
 
         // Determine which webhook URL to use based on the source channel
         if (message.channel.id === process.env.CHANNEL_ID_ONE) { // FWRD CHANNEL 1
-            webhookurl = process.env.GENERAL_WEBHOOK_URL;
+            webhookurl = process.env.CHANNEL_ID_ONE_WEBHOOK;
         } else if (message.channel.id === process.env.CHANNEL_ID_TWO) { // FWRD CHANNEL 2
-            webhookurl = process.env.BEGINNERS_WEBHOOK_URL;
+            webhookurl = process.env.CHANNEL_ID_TWO_WEBHOOK;
         } else if (message.channel.id === process.env.CHANNEL_ID_THREE) { // FWRD CHANNEL 3
-            webhookurl = process.env.ACTIVE_WEBHOOK_URL;
+            webhookurl = process.env.CHANNEL_ID_THREE_WEBHOOK;
         } else {
             return;
         }
