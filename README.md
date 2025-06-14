@@ -68,14 +68,14 @@ GUILD_ID=your_guild_id
 FORWARD_CHANNEL_ID=your_forward_channel_id
 
 # Channel IDs to monitor
-GENERAL_CHANNEL_ID=your_general_channel_id
-BEGINNERS_CHANNEL_ID=your_beginners_channel_id
-ACTIVE_CHANNEL_ID=your_active_channel_id
+CHANNEL_ID_ONE: your_id_one_channel_id
+CHANNEL_ID_TWO: your_id_two_channel_id
+CHANNEL_ID_THREE: your_id_three_channel_id
 
 # Discord Webhook URLs
-GENERAL_WEBHOOK_URL=your_general_webhook_url
-BEGINNERS_WEBHOOK_URL=your_beginners_webhook_url
-ACTIVE_WEBHOOK_URL=your_active_webhook_url
+CHANNEL_ID_ONE_WEBHOOK: your_id_one_webhook_url
+CHANNEL_ID_TWO_WEBHOOK: your_id_two_webhook_url
+CHANNEL_ID_THREE_WEBHOOK: your_id_three_webhook_url
 
 # Notification Settings (true/false)
 ENABLE_PUSHOVER=true
