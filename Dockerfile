@@ -3,7 +3,7 @@ FROM node:24-alpine AS build
 
 RUN mkdir /app
 
-COPY client.js package.json package-lock.json /app
+COPY client.js package.json package-lock.json /app/
 
 RUN cd /app && \
     npm install && \
