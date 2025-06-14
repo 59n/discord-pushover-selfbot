@@ -1,0 +1,39 @@
+---
+services:
+
+  discord-pushover:
+    build:
+      context: .
+    restart: always
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    networks:
+      - discord-pushover
+    environment:
+      # Discord Bot Configuration
+      DISCORD_TOKEN: your_discord_token
+      # Guild and Channel IDs
+      GUILD_ID: your_guild_id
+      FORWARD_CHANNEL_ID: your_forward_channel_id
+      # Channel IDs to monitor
+      GENERAL_CHANNEL_ID: your_general_channel_id
+      BEGINNERS_CHANNEL_ID: your_beginners_channel_id
+      ACTIVE_CHANNEL_ID: your_active_channel_id
+      # Discord Webhook URLs
+      GENERAL_WEBHOOK_URL: your_general_webhook_url
+      BEGINNERS_WEBHOOK_URL: your_beginners_webhook_url
+      ACTIVE_WEBHOOK_URL: your_active_webhook_url
+      # Notification Settings (true/false)
+      ENABLE_PUSHOVER: true
+      ENABLE_DISCORD_NOTIF: false
+      ENABLE_NTFY: false
+      # Pushover Configuration
+      PUSHOVER_TOKEN: your_pushover_token
+      PUSHOVER_USER: your_pushover_user_key
+      # NTFY Configuration
+      NTFY_URL: your_ntfy_url
+
+networks:
+  discord-pushover:
